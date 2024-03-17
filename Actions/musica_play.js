@@ -3,10 +3,10 @@ module.exports = {
   displayName: "Play Music",
   section: "Music Control",
   meta: {
-    version: "2.1.7",
+    version: "1.0.0",
     preciseCheck: true,
-    author: "Caio Sclavi",
-    authorUrl: "https://ko-fi.com/caiozin",
+    author: "Izaya Pantovich",
+    authorUrl: "https://patreon.com/zayyo_o?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink",
   },
   fields: ["song", "channel", "tchannel"],
   subtitle(data) {

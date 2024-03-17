@@ -4,9 +4,7 @@ This integration harnesses the power of the Magmastream player, enabling seamles
 
 These modules are designed to be utilized with slash commands, but can also function with regular messages by adjusting the file configurations accordingly.
 
-This represents a more refined and comprehensive iteration of the project initially found at: [GitHub Repository](https://github.com/Caio-Sc/lavalink---dbm)
-
-If you wish to support this endeavor, kindly consider contributing via my Patreon page ([link](https://patreon.com/zayyo_o?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink)). Alternatively, feel free to reach out to me on Discord or initiate a discussion for other donation methods.
+If you wish to support this endeavor, kindly consider contributing via my [Patreon page](https://patreon.com/zayyo_o?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink). Alternatively, feel free to reach out to me on Discord or initiate a discussion for other donation methods.
 
 ## Musica Connect
 
@@ -37,7 +35,7 @@ This section facilitates the presentation of added music to the queue. Presently
 
 ## Optimal Hosting Setup
 
-The recommended hosting approach involves setting up the Pterodactyl Panel ([link](https://pterodactyl.io)) and acquiring a VPS, VDS, or dedicated server. AdvinServers ([link](https://clients.advinservers.com/aff.php?aff=523)) is suggested as a reliable hosting provider. After configuring the Pterodactyl Panel or engaging AdvinServers' setup services, proceed to obtain a Node.js egg and a Lavalink egg. Subsequently, install and deploy these eggs, add your bot files to the Node.js egg, and proceed with the setup process.
+The recommended hosting approach involves setting up the [Pterodactyl Panel](https://pterodactyl.io) and acquiring a VPS, VDS, or dedicated server. [AdvinServers](https://clients.advinservers.com/aff.php?aff=523) is suggested as a reliable hosting provider. After configuring the Pterodactyl Panel or engaging AdvinServers' setup services, proceed to obtain a Node.js egg and a Lavalink egg. Subsequently, install and deploy these eggs, add your bot files to the Node.js egg, and proceed with the setup process.
 
 Should you require assistance with setup, I offer my services at a nominal fee of $5. Please note that you are responsible for obtaining your server, and if you opt for my hosting services, a monthly fee of at least $15 applies. Additionally, I specialize in hosting Discord bots exclusively, starting at a minimum of $2.50 per month.
 

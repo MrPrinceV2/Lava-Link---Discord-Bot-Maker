@@ -1,0 +1,11 @@
+{
+  "name": "lavilinkstart",
+  "temp": "",
+  "event-type": "48",
+  "_id": "NhZVQ",
+  "actions": [
+    {
+      "name": "LavaLinkConnect"
+    }
+  ]
+}

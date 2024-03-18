@@ -1,0 +1,170 @@
+{
+  "name": "play",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "4",
+  "_id": "FTaOc",
+  "actions": [
+    {
+      "comment": "http://go.zayy.pro/eKfwzB",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You aren't connected to a voice channel.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "Bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "19",
+      "storage": "1",
+      "varName2": "Member Voice CHannel",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Bot",
+      "info": "19",
+      "storage": "1",
+      "varName2": "Bot Voice CHannel",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "3",
+      "varName": "Member Voice CHannel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Member VC ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "Bot Voice CHannel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Bot VC ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "member": "2",
+      "varName": "Bot",
+      "info": "4",
+      "varName2": "",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "3",
+        "iffalseVal": "3"
+      },
+      "name": "Check If Member"
+    },
+    {
+      "storage": "1",
+      "varName": "Member VC ID",
+      "comparison": "1",
+      "value": "tempVars(\"Bot VC ID\")",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, you aren't in the same voice channel has Versa!",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "2",
+      "varName": "Bot",
+      "info": "4",
+      "varName2": "",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "1"
+      },
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Channel ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "song": "${slashParams(\"song\")}",
+      "channel": "${tempVars(\"Member VC ID\")}",
+      "tchannel": "${tempVars(\"Channel ID\")}",
+      "name": "playMusic"
+    }
+  ],
+  "comType": "4",
+  "description": "Play a song!",
+  "parameters": [
+    {
+      "name": "song",
+      "description": "Song to play.",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    }
+  ]
+}

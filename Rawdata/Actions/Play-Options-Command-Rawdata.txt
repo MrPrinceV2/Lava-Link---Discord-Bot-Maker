@@ -1,0 +1,604 @@
+{
+  "name": "play-options",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "4",
+  "_id": "Wgffw",
+  "actions": [
+    {
+      "comment": "http://go.zayy.pro/eKfwzB",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "queue",
+      "branch": {
+        "iftrue": "4",
+        "iffalse": "0",
+        "iftrueVal": "queue"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, you aren't in a voice channel.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "19",
+      "storage": "1",
+      "varName2": "Member voice channel",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "Bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "Bot",
+      "info": "4",
+      "varName2": "",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, Versa isn't in a voice channel.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "2",
+      "varName": "Bot",
+      "info": "19",
+      "storage": "1",
+      "varName2": "Bot voice channel",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "3",
+      "varName": "Member voice channel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Member VC ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "Bot voice channel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Bot VC ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "Member VC ID",
+      "comparison": "1",
+      "value": "tempVars(\"Bot VC ID\")",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You aren't in the same voice channel has Versa!",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "Server-DJ-ID",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Server DJ Role ID",
+      "name": "Store Server Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_MESSAGES",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "3"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "101",
+      "varName2": "${tempVars(\"Server DJ Role ID\")}",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check If Member has Role"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, you aren't a DJ! This can be bypassed by having **Manage Messages** permissions.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "pause",
+      "branch": {
+        "iftrue": "4",
+        "iffalse": "0",
+        "iftrueVal": "pause"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "resume",
+      "branch": {
+        "iftrue": "4",
+        "iffalse": "0",
+        "iftrueVal": "resume"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "skip",
+      "branch": {
+        "iftrue": "4",
+        "iffalse": "0",
+        "iftrueVal": "skip"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "stop",
+      "branch": {
+        "iftrue": "4",
+        "iffalse": "0",
+        "iftrueVal": "stop"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "option",
+      "comparison": "1",
+      "value": "setdj",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "3",
+        "iffalseVal": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "setdj",
+      "comparison": "1",
+      "value": "null",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "4",
+        "iffalseVal": "setdj"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, an error occured or you didn't select a DJ role!",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "pause",
+      "name": "Action Anchor"
+    },
+    {
+      "name": "pauseMusic"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} paused the current playing song.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "queue",
+      "name": "Action Anchor"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This is coming soon! Working on some bugs.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName2": "Queue",
+      "info": "",
+      "name": "playerMusic"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Queue:\n\n${tempVars(\"Queue\")}",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "resume",
+      "name": "Action Anchor"
+    },
+    {
+      "name": "resumeMusic"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} resumed the current song.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "skip",
+      "name": "Action Anchor"
+    },
+    {
+      "name": "skipMusic"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} skipped.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "stop",
+      "name": "Action Anchor"
+    },
+    {
+      "channel": "${tempVars(\"Bot VC ID\")}",
+      "name": "stopMusic"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} stopped the music.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchorName": "setdj",
+      "name": "Action Anchor"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sorry, you don't have Admin permissions.",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "role": "6",
+      "varName": "setdj",
+      "info": "1",
+      "storage": "1",
+      "varName2": "role id djdjd",
+      "name": "Store Role Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "Server-DJ-ID",
+      "changeType": "0",
+      "value": "tempVars(\"role id djdjd\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Set DJ role to ${slashParams(\"setdj\")}!",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "comType": "4",
+  "description": "Choose an option to a song.",
+  "parameters": [
+    {
+      "name": "option",
+      "description": "Select an option.",
+      "type": "STRING",
+      "required": true,
+      "choices": [
+        {
+          "name": "pause",
+          "value": "pause"
+        },
+        {
+          "name": "queue",
+          "value": "queue"
+        },
+        {
+          "name": "resume",
+          "value": "resume"
+        },
+        {
+          "name": "skip",
+          "value": "skip"
+        },
+        {
+          "name": "stop",
+          "value": "stop"
+        },
+        {
+          "name": "setdj",
+          "value": "setdj"
+        }
+      ]
+    },
+    {
+      "name": "setdj",
+      "description": "Set the DJ role!",
+      "type": "ROLE",
+      "required": false,
+      "choices": null
+    }
+  ]
+}
